@@ -1,0 +1,26 @@
+<table>
+    <thead>
+        <tr>
+            <th>Num.</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each productos}}
+        <tr>
+            <td>{{@index}}</td>
+            <td>{{nombre}}</td>
+            <td>{{descripcion}}</td>
+            <td>{{precio}}</td>
+            <td>
+                <button>Status</button>
+                <a href="/update/{{_id}}">Actualizar</a>
+                <a href="/delete/{{_id}}">Eliminar</a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

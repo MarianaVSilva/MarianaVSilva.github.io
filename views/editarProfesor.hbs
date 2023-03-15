@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 offset-md-3">
+            <div class="card card-body bg-dark p-4 text-white">
+<h4>PROFESORES</h4>
+
+<form action="/update/profesores/{{profesores._id}}" method="POST">
+<div>
+    <label for="RFC">Modifica RFC:</label>
+    <input type="text" name="RFC" placeholder="RFC" 
+    value="{{profesores.RFC}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="nombre">Modifica nombre:</label>
+    <input type="text" name="nombre" placeholder="Nombre" 
+    value="{{profesores.nombre}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="paterno">Modifica apellido paterno:</label>
+    <input type="text" name="paterno" placeholder="Paterno" 
+    value="{{profesores.paterno}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="materno">Modifica materno:</label>
+    <input type="text" name="materno" placeholder="Materno" 
+    value="{{profesores.materno}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="fechaNacimiento">Modifica fecha:</label>
+    <input type="date" name="fechaNacimiento" placeholder="fechaNacimiento" 
+    value="{{profesores.fechaNacimiento}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="direccion">Modifica direccion:</label>
+    <input type="text" name="direccion" placeholder="Direccion" 
+    value="{{profesores.direccion}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="celular">Modifica celular:</label>
+    <input type="text" name="celular" placeholder="Celular" 
+    value="{{profesores.celular}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="profesion">Modifica profesion:</label>
+    <input type="text" name="profesion" placeholder="Profesion" 
+    value="{{profesores.profesion}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="numeroEmpleado">Modifica numero de Empleado:</label>
+    <input type="text" name="numeroEmpleado" placeholder="numeroEmpleado" 
+    value="{{profesores.numeroEmpleado}}" class="form-control bg-dark text-white">
+</div>
+
+<button class="btn btn-info">Actualizar</button>
+</form>
+
+            </div>
+        </div>
+    </div>
+</div>

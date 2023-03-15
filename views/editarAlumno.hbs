@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 offset-md-3">
+            <div class="card card-body bg-dark p-4 text-white">
+                <h4>Actualiza alumno</h4>
+
+<form action="/update/alumnos/{{alumnos._id}}" method="POST">
+<div>
+    <label for="nombre">Modifica nombre:</label>
+    <input type="text" name="nombre" placeholder="Nombre" 
+    value="{{alumnos.nombre}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="paterno">Modifica apellido paterno:</label>
+    <input type="text" name="paterno" placeholder="Paterno" 
+    value="{{alumnos.paterno}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="materno">Modifica materno:</label>
+    <input type="text" name="materni" placeholder="Materno" 
+    value="{{alumnos.materno}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="fechaNacimiento">Modifica fecha:</label>
+    <input type="date" name="fechaNacimiento" placeholder="fechaNacimiento" 
+    value="{{alumnos.fechaNacimiento}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="sexo">Modifica sexo:</label>
+    <input type="text" name="sexo" placeholder="Sexo" 
+    value="{{alumnos.sexo}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="celular">Modifica celular:</label>
+    <input type="text" name="celular" placeholder="Celular" 
+    value="{{alumnos.celular}}" class="form-control bg-dark text-white">
+</div>
+<div>
+    <label for="direccion">Modifica direccion:</label>
+    <input type="text" name="direccion" placeholder="Direccion" 
+    value="{{alumnos.direccion}}" class="form-control bg-dark text-white">
+</div>
+<button class="btn btn-info">Actualizar</button>
+</form>
+
+            </div>
+        </div>
+    </div>
+</div>

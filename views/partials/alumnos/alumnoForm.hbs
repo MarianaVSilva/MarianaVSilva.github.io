@@ -1,0 +1,36 @@
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
+<h4>Agregar Alumno</h4>
+<form action="/alumnos/agregar" method="POST">
+    <div>
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" placeholder="Nombre" id="nombre" class="form-control bg-dark text-white"/>
+    </div>
+     <div>
+        <label for="paterno">Apellido paterno: </label>
+        <input type="text" name="paterno" placeholder="Apellido Paterno" id="paterno" class="form-control bg-dark text-white"/>
+    </div>
+     <div>
+        <label for="materno">Apellido materno: </label>
+        <input type="text" name="materno" placeholder="Apellido Materno" id="materno" class="form-control bg-dark text-white"/>
+    </div>
+     <div>
+        <label for="fechaNacimiento">Fecha de Nacimiento: </label>
+        <input type="date" name="fechaNacimiento" placeholder="Fecha Nacimiento" id="fechaNacimiento" class="form-control bg-dark text-white"/>
+    </div>
+     <div>
+        <label for="sexo">Sexo: </label>
+        <input type="text" name="sexo" placeholder="Sexo" id="sexo" class="form-control bg-dark text-white"/>
+    </div>
+     <div>
+        <label for="celular">Celular: </label>
+        <input type="text" name="celular" placeholder="Celular" id="celular" class="form-control bg-dark text-white"/>
+    </div>
+    <div>
+        <label for="direccion">Direccion</label>
+        <textarea name="direccion" cols="20" rows="2" placeholder="Direccion" class="form-control bg-dark text-white"></textarea>
+    </div>
+    
+    <button class="btn btn-success btn-sm mt-2">Agregar</button>
+
+</form>
+</div>

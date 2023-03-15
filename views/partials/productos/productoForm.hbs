@@ -1,0 +1,19 @@
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
+    <h4>Agregar Producto</h4>
+<form action="/productos/agregar" method="POST">
+    <div>
+        <label for="nombre">Escribe el nombre: </label>
+        <input type="text" name="nombre" placeholder="Name" id="nombre" class="form-control bg-dark text-white"/>
+    </div>
+    <div>
+        <label for="descripcion">Descripcion</label>
+        <textarea name="descripcion" cols="25" rows="5" placeholder="Description" class="form-control bg-dark text-white"></textarea>
+    </div>
+     <div>
+        <label for="precio">Escribe el precio: </label>
+        <input type="text" name="precio" placeholder="Price" id="precio" class="form-control bg-dark text-white"/>
+    </div>
+    <button class="btn btn-success btn-sm mt-2">Agregar</button>
+
+</form>
+</div>
